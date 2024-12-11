@@ -1,6 +1,6 @@
-# RAG-Workflow
+# LLMOps-Workflow
 
-RAG-Workflow는 지식 데이터를 벡터화하여 효과적으로 관리하고, 등록된 지식을 기반으로 사용자의 질의에 적합한 답변을 생성할 수 있도록 설계된 시스템입니다. 사용자는 이 시스템을 통해 대규모의 비정형 데이터를 처리하고, 그에 맞는 적절한 응답을 받을 수 있습니다.
+LLMOps-Workflow는 지식 데이터를 벡터화하여 효과적으로 관리하고, 등록된 지식을 기반으로 사용자의 질의에 적합한 답변을 생성할 수 있도록 설계된 시스템입니다. 사용자는 이 시스템을 통해 대규모의 비정형 데이터를 처리하고, 그에 맞는 적절한 응답을 받을 수 있습니다.
 
 ## Tech Stack
 
@@ -12,16 +12,9 @@ RAG-Workflow는 지식 데이터를 벡터화하여 효과적으로 관리하고
 ![MariaDB Icon](https://img.shields.io/badge/mariadb-003545?style=flat&logo=mariadb&logoColor=white)
 
 
-
-# Demo
-
-![Demo Screenshot](./screenshot.png)
-
-RAG-Workflow의 실제 동작 예시는 위의 스크린샷을 참고해주세요.
-
 # Key Features
 
-RAG(Retriever-Augmented Generation) 기반 워크플로우의 주요 기능은 다음과 같습니다:
+LLMOps 기반 워크플로우의 주요 기능은 다음과 같습니다:
 
 1. **지식 기반 질의응답**: RAG-Workflow는 사전 학습된 자연어 처리 모델과 벡터화를 통해 대규모의 지식 베이스에서 관련 정보를 빠르게 검색하여 질의에 맞는 적절한 답변을 생성합니다.
    
@@ -35,9 +28,7 @@ RAG(Retriever-Augmented Generation) 기반 워크플로우의 주요 기능은 �
 
 # System Architecture
 
-RAG-Workflow의 시스템 아키텍처는 아래와 같습니다:
-
-![System Architecture](./architecture.png)
+LLMOps-Workflow의 시스템 아키텍처는 아래와 같습니다:
 
 1. **데이터 수집 및 벡터화**: 텍스트 데이터는 HuggingFace 모델을 사용해 벡터화되고 MariaDB에 저장됩니다.
 2. **질의 처리**: 사용자가 질의를 제출하면 FastAPI를 통해 요청이 접수되며, 벡터화된 지식 베이스를 탐색해 관련된 정보를 추출합니다.
